@@ -1,7 +1,7 @@
 interface Question {
   id: number;
   subject: string;
-  level: '6ème' | '5ème' | '4ème';
+  level: '6ème' | '5ème' | '4ème' | '3ème' | '2nde' | '1ère' | 'Terminale';
   question: string;
   options: string[];
   correctAnswer: string;
@@ -9,7 +9,7 @@ interface Question {
 }
 
 export const questions: Question[] = [
-  // Questions pour la 6ème - Bases très simples
+  // Question pour la premième catégorie
     {
       "id": 1,
       "subject": "Scratch Basics",
@@ -291,7 +291,7 @@ export const questions: Question[] = [
       "explanation": "Le bloc \"dire ... pendant ... secondes\" permet d'afficher un message sous forme de bulle de dialogue."
     },
   
-  // Questions pour la 5ème - Introduction aux concepts plus avancés
+  // Question pour la deuxième catégorie
     {
       "id": 21,
       "subject": "Scratch Basics",
@@ -572,7 +572,7 @@ export const questions: Question[] = [
       "correctAnswer": "attendre ... secondes",
       "explanation": "Le bloc \"attendre ... secondes\" permet de mettre une pause dans l'exécution du script pendant une durée spécifiée."
     },
-  // Questions pour la 4ème - Concepts plus complexes
+  // Question pour la troisième catégorie
   {
     "id": 41,
     "subject": "Scratch Basics",
@@ -852,5 +852,572 @@ export const questions: Question[] = [
     ],
     "correctAnswer": "quand le drapeau vert est cliqué",
     "explanation": "Le bloc \"quand le drapeau vert est cliqué\" permet de déclencher un script lorsque le drapeau vert est activé."
-  }
+  },
+
+  // Question pour la quatrième catégorie
+  {
+    "id": 61,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet de créer des clones d'un sprite tout en exécutant un script spécifique pour chaque clone ?",
+    "options": [
+      "créer un clone de ...",
+      "dupliquer sprite",
+      "ajouter un clone",
+      "générer un clone"
+    ],
+    "correctAnswer": "créer un clone de ...",
+    "explanation": "Le bloc \"créer un clone de ...\" permet de générer une copie d'un sprite et d'exécuter le script attaché au clone."
+  },
+  {
+    "id": 62,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet de détecter si une touche spécifique du clavier est pressée ?",
+    "options": [
+      "touche ... pressée ?",
+      "clavier activé",
+      "vérifier touche",
+      "touche active"
+    ],
+    "correctAnswer": "touche ... pressée ?",
+    "explanation": "Le bloc \"touche ... pressée ?\" permet de détecter si une touche du clavier est pressée."
+  },
+  {
+    "id": 63,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Comment peut-on interrompre un script spécifique dans Scratch ?",
+    "options": [
+      "arrêter ce script",
+      "pause script",
+      "interrompre",
+      "stopper script"
+    ],
+    "correctAnswer": "arrêter ce script",
+    "explanation": "Le bloc \"arrêter ce script\" met fin à l'exécution du script en cours."
+  },
+  {
+    "id": 64,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc peut être utilisé pour effectuer une action seulement si une condition est vraie, sinon en exécuter une autre ?",
+    "options": [
+      "si ... sinon",
+      "condition alternative",
+      "vrai ou faux",
+      "tester sinon"
+    ],
+    "correctAnswer": "si ... sinon",
+    "explanation": "Le bloc \"si ... sinon\" permet d'exécuter une action si une condition est vraie, ou une autre action sinon."
+  },
+  {
+    "id": 65,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet de faire répéter indéfiniment une action jusqu'à ce que le programme soit arrêté ?",
+    "options": [
+      "répéter indéfiniment",
+      "boucle infinie",
+      "répéter pour toujours",
+      "exécuter sans fin"
+    ],
+    "correctAnswer": "répéter pour toujours",
+    "explanation": "Le bloc \"répéter pour toujours\" fait en sorte qu'une action se répète sans interruption."
+  },
+  {
+    "id": 66,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Comment peut-on intégrer une liste dans Scratch pour stocker plusieurs éléments ?",
+    "options": [
+      "créer une liste",
+      "générer un tableau",
+      "ajouter une structure",
+      "liste multiple"
+    ],
+    "correctAnswer": "créer une liste",
+    "explanation": "Le bloc \"créer une liste\" permet de créer une structure de données pour stocker plusieurs éléments."
+  },
+  {
+    "id": 67,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet de dire au programme d'attendre une durée spécifique avant de continuer ?",
+    "options": [
+      "attendre ... secondes",
+      "pause ... secondes",
+      "retarder action",
+      "délai d'attente"
+    ],
+    "correctAnswer": "attendre ... secondes",
+    "explanation": "Le bloc \"attendre ... secondes\" fait une pause dans l'exécution du script pendant un certain temps."
+  },
+  {
+    "id": 68,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Comment peut-on ajouter un élément spécifique à une liste dans Scratch ?",
+    "options": [
+      "ajouter ... à ...",
+      "insérer élément",
+      "mettre dans liste",
+      "ajouter élément"
+    ],
+    "correctAnswer": "ajouter ... à ...",
+    "explanation": "Le bloc \"ajouter ... à ...\" permet d'ajouter un élément au contenu d'une liste."
+  },
+  {
+    "id": 69,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc peut être utilisé pour arrêter uniquement un script d'un clone ?",
+    "options": [
+      "arrêter ce clone",
+      "stopper clone",
+      "arrêter tout",
+      "fin du clone"
+    ],
+    "correctAnswer": "arrêter ce clone",
+    "explanation": "Le bloc \"arrêter ce clone\" met fin uniquement à l'exécution des scripts du clone actuel."
+  },
+  {
+    "id": 70,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet de répéter une action en utilisant une variable incrémentée à chaque répétition ?",
+    "options": [
+      "répéter avec variable",
+      "répéter (n) fois",
+      "compteur de boucle",
+      "répéter jusqu'à"
+    ],
+    "correctAnswer": "répéter (n) fois",
+    "explanation": "Le bloc \"répéter (n) fois\" exécute une action un nombre défini de fois, souvent en utilisant une variable comme compteur."
+  },
+  {
+    "id": 71,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet de jouer un son jusqu'à ce qu'il soit terminé avant de passer à l'action suivante ?",
+    "options": [
+      "jouer le son ... jusqu'à la fin",
+      "jouer son",
+      "lancer un son",
+      "terminer le son"
+    ],
+    "correctAnswer": "jouer le son ... jusqu'à la fin",
+    "explanation": "Le bloc \"jouer le son ... jusqu'à la fin\" attend que le son soit terminé avant de continuer l'exécution du script."
+  },
+  {
+    "id": 72,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc est utilisé pour lire une variable ou un élément spécifique d'une liste ?",
+    "options": [
+      "lire élément ... de ...",
+      "voir variable",
+      "obtenir valeur",
+      "récupérer élément"
+    ],
+    "correctAnswer": "lire élément ... de ...",
+    "explanation": "Le bloc \"lire élément ... de ...\" récupère la valeur d'un élément spécifique d'une liste."
+  },
+  {
+    "id": 73,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Comment un sprite peut-il détecter une couleur spécifique dans Scratch ?",
+    "options": [
+      "touche la couleur ... ?",
+      "détecter couleur",
+      "vérifier couleur",
+      "collision couleur"
+    ],
+    "correctAnswer": "touche la couleur ... ?",
+    "explanation": "Le bloc \"touche la couleur ... ?\" permet à un sprite de détecter une couleur spécifique."
+  },
+  {
+    "id": 74,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc peut être utilisé pour supprimer tous les éléments d'une liste ?",
+    "options": [
+      "supprimer tout de ...",
+      "vider liste",
+      "réinitialiser liste",
+      "effacer liste"
+    ],
+    "correctAnswer": "supprimer tout de ...",
+    "explanation": "Le bloc \"supprimer tout de ...\" vide entièrement une liste."
+  },
+  {
+    "id": 75,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Comment un sprite peut-il se diriger vers un autre sprite dans Scratch ?",
+    "options": [
+      "pointer vers ...",
+      "aller à ...",
+      "cibler sprite",
+      "suivre sprite"
+    ],
+    "correctAnswer": "pointer vers ...",
+    "explanation": "Le bloc \"pointer vers ...\" fait pivoter un sprite pour qu'il soit orienté vers un autre."
+  },
+  {
+    "id": 76,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet d'attendre qu'un message soit reçu avant d'exécuter une action ?",
+    "options": [
+      "quand je reçois ...",
+      "attendre message",
+      "écouter signal",
+      "recevoir signal"
+    ],
+    "correctAnswer": "quand je reçois ...",
+    "explanation": "Le bloc \"quand je reçois ...\" déclenche un script lorsque le message spécifié est reçu."
+  },
+  {
+    "id": 77,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Comment peut-on comparer deux nombres dans Scratch pour vérifier une condition ?",
+    "options": [
+      "bloc de comparaison",
+      "tester nombres",
+      "opérateur de comparaison",
+      "comparer ... avec ..."
+    ],
+    "correctAnswer": "opérateur de comparaison",
+    "explanation": "Les opérateurs de comparaison comme \"<\", \">\", et \"=\" permettent de comparer deux nombres."
+  },
+  {
+    "id": 78,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc permet d'afficher une variable sur la scène ?",
+    "options": [
+      "montrer variable",
+      "afficher",
+      "voir valeur",
+      "variable visible"
+    ],
+    "correctAnswer": "montrer variable",
+    "explanation": "Le bloc \"montrer variable\" rend visible une variable sur la scène."
+  },
+  {
+    "id": 79,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc peut être utilisé pour effacer toutes les formes dessinées par le stylo ?",
+    "options": [
+      "effacer tout",
+      "réinitialiser dessin",
+      "vider stylo",
+      "supprimer dessins"
+    ],
+    "correctAnswer": "effacer tout",
+    "explanation": "Le bloc \"effacer tout\" supprime tout ce qui a été dessiné par le stylo."
+  },
+  {
+    "id": 80,
+    "subject": "Scratch Advanced",
+    "level": "3ème",
+    "question": "Quel bloc peut être utilisé pour régler l'épaisseur du stylo ?",
+    "options": [
+      "régler épaisseur stylo",
+      "ajuster taille stylo",
+      "stylo épaisseur",
+      "mettre largeur stylo"
+    ],
+    "correctAnswer": "régler épaisseur stylo",
+    "explanation": "Le bloc \"régler épaisseur stylo\" ajuste la largeur du trait dessiné par le stylo."
+  },
+
+  // Question pour la cinquième catégorie
+  {
+    "id": 81,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de créer un clone d'un sprite dans Scratch ?",
+    "options": [
+      "créer un clone de moi-même",
+      "dupliquer sprite",
+      "ajouter un clone",
+      "créer un clone"
+    ],
+    "correctAnswer": "créer un clone de moi-même",
+    "explanation": "Le bloc \"créer un clone de moi-même\" permet de dupliquer un sprite et d'exécuter un script spécifique pour chaque clone."
+  },
+  {
+    "id": 82,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc est utilisé pour détecter si une touche spécifique du clavier est pressée ?",
+    "options": [
+      "touche pressée ... ?",
+      "détecter touche",
+      "si touche appuyée",
+      "clavier activé"
+    ],
+    "correctAnswer": "touche pressée ... ?",
+    "explanation": "Le bloc \"touche pressée ... ?\" vérifie si une touche particulière du clavier est pressée."
+  },
+  {
+    "id": 83,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment peut-on faire rebondir un sprite lorsqu'il atteint un bord ?",
+    "options": [
+      "rebondir si bord atteint",
+      "retourner à bord",
+      "changement de direction",
+      "collision avec bord"
+    ],
+    "correctAnswer": "rebondir si bord atteint",
+    "explanation": "Le bloc \"rebondir si bord atteint\" change automatiquement la direction d'un sprite lorsqu'il touche un bord."
+  },
+  {
+    "id": 84,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de définir une liste vide pour y ajouter des éléments ?",
+    "options": [
+      "créer une liste",
+      "nouvelle liste",
+      "ajouter une liste",
+      "initialiser liste"
+    ],
+    "correctAnswer": "créer une liste",
+    "explanation": "Le bloc \"créer une liste\" initialise une nouvelle liste vide qui peut contenir plusieurs éléments."
+  },
+  {
+    "id": 85,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment ajouter un élément spécifique à une liste dans Scratch ?",
+    "options": [
+      "ajouter ... à ...",
+      "insérer dans liste",
+      "ajouter élément",
+      "mettre dans liste"
+    ],
+    "correctAnswer": "ajouter ... à ...",
+    "explanation": "Le bloc \"ajouter ... à ...\" permet d'ajouter un nouvel élément à la fin d'une liste."
+  },
+  {
+    "id": 86,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de supprimer un élément d'une liste à une position donnée ?",
+    "options": [
+      "supprimer ... de ...",
+      "retirer élément",
+      "effacer position",
+      "supprimer dans liste"
+    ],
+    "correctAnswer": "supprimer ... de ...",
+    "explanation": "Le bloc \"supprimer ... de ...\" permet de retirer un élément spécifique d'une liste en indiquant sa position."
+  },
+  {
+    "id": 87,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de mélanger les costumes d'un sprite pour créer une animation ?",
+    "options": [
+      "suivant costume",
+      "changer costume",
+      "animation costume",
+      "défilement costume"
+    ],
+    "correctAnswer": "suivant costume",
+    "explanation": "Le bloc \"suivant costume\" change le costume du sprite pour passer au costume suivant dans la liste."
+  },
+  {
+    "id": 88,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment détecter la distance entre un sprite et un objet ou une position ?",
+    "options": [
+      "distance de ...",
+      "proximité de ...",
+      "mesurer distance",
+      "calculer distance"
+    ],
+    "correctAnswer": "distance de ...",
+    "explanation": "Le bloc \"distance de ...\" mesure la distance entre le sprite actuel et un autre sprite ou une position donnée."
+  },
+  {
+    "id": 89,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de définir l'effet graphique d'un sprite ?",
+    "options": [
+      "ajouter effet ...",
+      "changer effet ... de ...",
+      "modifier effet ...",
+      "effet graphique"
+    ],
+    "correctAnswer": "changer effet ... de ...",
+    "explanation": "Le bloc \"changer effet ... de ...\" permet de modifier des effets visuels comme la couleur, la transparence ou la luminosité d'un sprite."
+  },
+  {
+    "id": 90,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de redémarrer un effet graphique appliqué à un sprite ?",
+    "options": [
+      "effacer tous les effets",
+      "réinitialiser effets",
+      "supprimer effets",
+      "retirer effets"
+    ],
+    "correctAnswer": "effacer tous les effets",
+    "explanation": "Le bloc \"effacer tous les effets\" supprime tous les effets graphiques appliqués à un sprite, le restaurant à son état initial."
+  },
+  {
+    "id": 91,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc peut être utilisé pour régler la direction dans laquelle un sprite se déplace ?",
+    "options": [
+      "pointer dans la direction ...",
+      "changer direction",
+      "définir déplacement",
+      "orientation du sprite"
+    ],
+    "correctAnswer": "pointer dans la direction ...",
+    "explanation": "Le bloc \"pointer dans la direction ...\" oriente un sprite dans une direction spécifique avant qu'il ne se déplace."
+  },
+  {
+    "id": 92,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment un clone peut-il être supprimé automatiquement après une action ?",
+    "options": [
+      "supprimer ce clone",
+      "effacer clone",
+      "arrêter clone",
+      "fin clone"
+    ],
+    "correctAnswer": "supprimer ce clone",
+    "explanation": "Le bloc \"supprimer ce clone\" détruit le clone actuel après qu'il a exécuté ses scripts."
+  },
+  {
+    "id": 93,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de basculer un sprite entre deux costumes spécifiques ?",
+    "options": [
+      "basculer costume à ...",
+      "aller au costume ...",
+      "changer costume ...",
+      "définir costume ..."
+    ],
+    "correctAnswer": "basculer costume à ...",
+    "explanation": "Le bloc \"basculer costume à ...\" permet de passer directement à un costume spécifique du sprite."
+  },
+  {
+    "id": 94,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment afficher le contenu d'une liste dans l'interface de Scratch ?",
+    "options": [
+      "montrer liste",
+      "afficher éléments",
+      "dévoiler liste",
+      "liste visible"
+    ],
+    "correctAnswer": "montrer liste",
+    "explanation": "Le bloc \"montrer liste\" affiche le contenu d'une liste dans l'interface utilisateur pour qu'elle soit visible pendant l'exécution."
+  },
+  {
+    "id": 95,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de vérifier si une liste contient un élément spécifique ?",
+    "options": [
+      "contient ... dans ... ?",
+      "vérifier liste",
+      "élément présent",
+      "liste inclut"
+    ],
+    "correctAnswer": "contient ... dans ... ?",
+    "explanation": "Le bloc \"contient ... dans ... ?\" retourne vrai si l'élément est présent dans la liste spécifiée."
+  },
+  {
+    "id": 96,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment déclencher une action uniquement pour un clone spécifique ?",
+    "options": [
+      "quand je commence comme un clone",
+      "si clone activé",
+      "début de clone",
+      "initialisation clone"
+    ],
+    "correctAnswer": "quand je commence comme un clone",
+    "explanation": "Le bloc \"quand je commence comme un clone\" exécute un script seulement pour les clones et non pour le sprite principal."
+  },
+  {
+    "id": 97,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc peut être utilisé pour attendre un temps aléatoire entre deux valeurs ?",
+    "options": [
+      "attendre aléatoire entre ... et ...",
+      "attendre temps variable",
+      "pause aléatoire",
+      "temps aléatoire"
+    ],
+    "correctAnswer": "attendre aléatoire entre ... et ...",
+    "explanation": "Le bloc \"attendre aléatoire entre ... et ...\" permet de faire une pause dont la durée est choisie de façon aléatoire entre deux limites."
+  },
+  {
+    "id": 98,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de redimensionner un sprite de manière progressive ?",
+    "options": [
+      "changer taille de ...",
+      "agrandir sprite",
+      "augmenter taille",
+      "réduire taille"
+    ],
+    "correctAnswer": "changer taille de ...",
+    "explanation": "Le bloc \"changer taille de ...\" modifie progressivement la taille d'un sprite en augmentant ou en réduisant sa valeur."
+  },
+  {
+    "id": 99,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Comment peut-on synchroniser plusieurs scripts exécutant des actions différentes ?",
+    "options": [
+      "envoyer un message",
+      "coordination",
+      "déclencheur global",
+      "action synchronisée"
+    ],
+    "correctAnswer": "envoyer un message",
+    "explanation": "Le bloc \"envoyer un message\" peut être utilisé pour synchroniser des scripts en diffusant un message déclencheur."
+  },
+  {
+    "id": 100,
+    "subject": "Scratch Notions Expert",
+    "level": "2nde",
+    "question": "Quel bloc permet de vérifier l'angle d'orientation actuel d'un sprite ?",
+    "options": [
+      "orientation actuelle",
+      "direction",
+      "angle de rotation",
+      "vérifier orientation"
+    ],
+    "correctAnswer": "direction",
+    "explanation": "Le bloc \"direction\" donne l'angle d'orientation actuel d'un sprite en degrés."
+  },
+  
+  // Question pour la sixième catégorie
+  
 ];
